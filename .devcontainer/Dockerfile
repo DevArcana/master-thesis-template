@@ -11,6 +11,7 @@ RUN apt-get update \
 
 # Verify git and needed tools are installed
 RUN apt-get install --no-install-recommends -y git procps
+RUN apt-get install --no-install-recommends -y ssh
 
 # Install Tex Live
 RUN apt-get update && apt-get -y upgrade \
