@@ -1,1 +1,24 @@
+# out folder
 out
+
+# intermediate latex files
+*.lop
+*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.lop
+*.out
+*.pyg
+*.toc
+*.bbl
+*.blg
+*.pygstyle
+*.pygtex
+_minted-*
+
+# resulting pdf documents
+*.pdf
