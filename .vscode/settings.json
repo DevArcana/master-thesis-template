@@ -1,5 +1,8 @@
 {
+    "editor.formatOnSave": true,
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.synctex.afterBuild.enabled": true,
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.autoClean.run": "onBuilt"
 }

@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  latex:
+    build: .
+    volumes:
+      - ../:/workspace:cached
+      - ~/.ssh:/home/vscode/.ssh:ro
+      - ~/.ssh:/root/.ssh:ro
+    environment:
+      - TZ=
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    entrypoint: /bin/sh -c "while sleep 1000; do :; done"
