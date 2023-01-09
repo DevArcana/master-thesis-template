@@ -14,16 +14,23 @@ RUN apt-get install --no-install-recommends -y git procps
 RUN apt-get install --no-install-recommends -y ssh
 
 # Install Tex Live
-RUN apt-get update && apt-get -y upgrade \
-    && apt-get -y install --no-install-recommends \
-    texlive-latex-base \
-    texlive-extra-utils \
-    texlive-latex-extra \
-    biber chktex latexmk make python3-pygments python3-pkg-resources \
-    texlive-lang-polish
+RUN apt-get update
+RUN apt-get -y upgrade
 
 RUN apt-get -y install --no-install-recommends \
-    tex-gyre
+    texlive-latex-base
+RUN apt-get -y install --no-install-recommends \
+    texlive-extra-utils
+RUN apt-get -y install --no-install-recommends \
+    texlive-latex-extra
+RUN apt-get -y install --no-install-recommends \
+    texlive-science
+RUN apt-get -y install --no-install-recommends \
+    texlive-lang-polish
+RUN apt-get -y install --no-install-recommends \
+    biber chktex latexmk make
+RUN apt-get -y install --no-install-recommends \
+    python3-pygments python3-pkg-resources
 
 # latexindent modules
 RUN apt-get install --no-install-recommends -y curl

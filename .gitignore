@@ -3,7 +3,7 @@ out
 
 # intermediate latex files
 *.lop
-*.synctex.gz
+*.synctex*
 *.aux
 *.fdb_latexmk
 *.fls
@@ -21,4 +21,4 @@ out
 _minted-*
 
 # resulting pdf documents
-*.pdf
+main.pdf
